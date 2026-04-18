@@ -130,8 +130,9 @@ Example:
 
 ### 2. Python
 
+
 ```bash
-pip3 install pyserial mac-notifications
+python3 install -r /path/to/requirements.txt
 ```
 
 ---
@@ -153,23 +154,15 @@ python3 main.py
 
 ---
 
-## ✨ Demo (optional)
-
+## ✨ Demo 
 
 
 ![Demo](./images/img1.jpeg)
 ![Demo](./images/img2.jpeg)
+![Demo](./images/img3.jpeg)
 
 
----
 
-## 💡 Ideas / Improvements
 
-* Ajouter plusieurs niveaux (safe / warning / danger)
-* Afficher la distance exacte
-* Support Windows/Linux
-* Interface graphique
-
----
 
 ## ❤️ Made with Arduino & Python
