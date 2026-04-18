@@ -37,14 +37,11 @@ Améliorer le confort visuel et sensibiliser à une bonne distance écran.
 
 ## 🔌 Schéma électronique
 
-👉 *(Ajoute ici tes images du montage)*
 Exemple :
 
-```
+
 ![Schéma](./images/schema.png)
 ![Schéma](./images/tinkercad.png)
-
-```
 
 ---
 
@@ -60,7 +57,7 @@ Exemple :
 ### 2. Python
 
 ```bash
-pip3 install pyserial mac-notifications
+python3 install -r /path/to/requirements.txt
 ```
 
 ---
@@ -115,12 +112,10 @@ Improve eye comfort and promote healthy screen distance habits.
 
 ## 🔌 Circuit Diagram
 
-👉 *(Add your wiring images here)*
 Example:
 
-```
 ![Circuit](./images/schema.png)
-```
+![Circuit](./images/tinkercad.png)
 
 ---
 
@@ -161,11 +156,10 @@ python3 main.py
 ## ✨ Demo (optional)
 
 
-```
+
 ![Demo](./images/img1.jpeg)
 ![Demo](./images/img2.jpeg)
 
-```
 
 ---
 
