@@ -42,6 +42,8 @@ Exemple :
 
 ```
 ![Schéma](./images/schema.png)
+![Schéma](./images/tinkercad.png)
+
 ```
 
 ---
@@ -158,10 +160,11 @@ python3 main.py
 
 ## ✨ Demo (optional)
 
-👉 *(Ajoute ici des images ou GIF)*
 
 ```
-![Demo](./images/demo.gif)
+![Demo](./images/img1.jpeg)
+![Demo](./images/img2.jpeg)
+
 ```
 
 ---
