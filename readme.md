@@ -1,43 +1,178 @@
-# 👁️ Face Distance Detector (Arduino)
+# 👁️ SmartFace Monitor (Arduino)
+
+> 🚨 Detect when you're too close to your screen and get notified instantly!
+
+---
 
 ## 🇫🇷 Description
 
-Projet Arduino permettant de détecter si un visage est trop proche d’un capteur.
-Le système mesure la distance entre l’utilisateur et l’appareil (via capteur ou caméra) et déclenche une alerte lorsque celle-ci devient inférieure à un seuil défini.
+SmartFace Monitor est un projet Arduino qui détecte si ton visage est trop proche d’un écran 📏.
+Lorsqu’une distance critique est atteinte, une notification macOS est envoyée pour te rappeler de reculer 👀
 
-🎯 Objectif : sensibiliser au respect des distances de sécurité dans un cadre éducatif ou expérimental.
+🎯 Objectif :
+Améliorer le confort visuel et sensibiliser à une bonne distance écran.
 
-### ⚙️ Fonctionnalités
+---
 
-* 📏 Mesure de distance en temps réel
-* 👤 Détection de proximité du visage
-* 🚨 Alerte (LED, buzzer, etc.) si la distance est trop courte
-* 🔧 Seuil de distance configurable
+## ⚙️ Fonctionnalités
 
-### 🛠️ Technologies
+* 📏 Mesure de distance en temps réel (ultrason)
+* 👤 Détection de proximité
+* 🚨 Notification macOS automatique
+* 🔔 Alerte sonore
+* 🎨 LED RGB (rouge → vert selon la distance)
+* 🔧 Seuil configurable
 
-* Arduino
-* Capteur de distance (ultrason / infrarouge) ou caméra
-* C / C++ (Arduino IDE)
+---
+
+## 🛠️ Technologies
+
+* Arduino (C/C++)
+* Capteur ultrason (HC-SR04)
+* Python 3
+* pyserial
+* macOS notifications (`mac_notifications`)
+
+---
+
+## 🔌 Schéma électronique
+
+👉 *(Ajoute ici tes images du montage)*
+Exemple :
+
+```
+![Schéma](./images/schema.png)
+```
+
+---
+
+## 🚀 Installation
+
+### 1. Arduino
+
+* Connecte ton capteur HC-SR04
+* Upload ton code Arduino
+
+---
+
+### 2. Python
+
+```bash
+pip3 install pyserial mac-notifications
+```
+
+---
+
+### 3. Lancer le projet
+
+```bash
+python3 main.py
+```
+
+---
+
+## 🧠 Fonctionnement
+
+* L’Arduino mesure la distance 📡
+* Si la distance est trop faible → envoie "1"
+* Python lit la donnée 📥
+* Une notification s’affiche 💻
 
 ---
 
 ## 🇬🇧 Description
 
-Arduino project designed to detect when a face is too close to a sensor.
-The system measures the distance between the user and the device (using a sensor or camera) and triggers an alert when it goes below a defined threshold.
+SmartFace Monitor is an Arduino project that detects when your face is too close to a screen 📏.
+When a critical distance is reached, a macOS notification is triggered to remind you to step back 👀
 
-🎯 Goal: raise awareness about safe distance practices in educational or experimental contexts.
+🎯 Goal:
+Improve eye comfort and promote healthy screen distance habits.
 
-### ⚙️ Features
+---
 
-* 📏 Real-time distance measurement
+## ⚙️ Features
+
+* 📏 Real-time distance measurement (ultrasonic)
 * 👤 Face proximity detection
-* 🚨 Alert system (LED, buzzer, etc.) when too close
-* 🔧 Adjustable distance threshold
+* 🚨 Automatic macOS notification
+* 🔔 Sound alert
+* 🎨 RGB LED (red → green depending on distance)
+* 🔧 Adjustable threshold
 
-### 🛠️ Technologies
+---
 
-* Arduino
-* Distance sensors (ultrasonic / infrared) or camera
-* C / C++ (Arduino IDE)
+## 🛠️ Technologies
+
+* Arduino (C/C++)
+* Ultrasonic sensor (HC-SR04)
+* Python 3
+* pyserial
+* macOS notifications (`mac_notifications`)
+
+---
+
+## 🔌 Circuit Diagram
+
+👉 *(Add your wiring images here)*
+Example:
+
+```
+![Circuit](./images/schema.png)
+```
+
+---
+
+## 🚀 Setup
+
+### 1. Arduino
+
+* Connect your HC-SR04 sensor
+* Upload the Arduino code
+
+---
+
+### 2. Python
+
+```bash
+pip3 install pyserial mac-notifications
+```
+
+---
+
+### 3. Run
+
+```bash
+python3 main.py
+```
+
+---
+
+## 🧠 How it works
+
+* Arduino measures distance 📡
+* If too close → sends "1"
+* Python reads data 📥
+* Notification pops up 💻
+
+---
+
+## ✨ Demo (optional)
+
+👉 *(Ajoute ici des images ou GIF)*
+
+```
+![Demo](./images/demo.gif)
+```
+
+---
+
+## 💡 Ideas / Improvements
+
+* Ajouter plusieurs niveaux (safe / warning / danger)
+* Afficher la distance exacte
+* Support Windows/Linux
+* Interface graphique
+
+---
+
+## ❤️ Made with Arduino & Python
